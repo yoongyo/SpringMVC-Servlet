@@ -12,7 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 public class OldController implements Controller {
     @Override
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        System.out.println("Old Conroller.hnadlerRequest");
-        return null;
+        System.out.println("Old Controller.handlerRequest");
+        return new ModelAndView("new-form");
     }
 }
+
+
